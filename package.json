@@ -1,6 +1,6 @@
 {
   "name": "breeze-ui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Beautiful custom React components built using Tailwind CSS!",
   "main": "build/index.js",
   "module": "build/index.es.js",
