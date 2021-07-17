@@ -4,11 +4,11 @@ interface LoadingSpinnerProps {
   addMargin?: boolean
 }
 
-export default function LoadingSpinner({
+const LoadingSpinner = ({
   size = 10,
   color = "text-blue-500",
   addMargin = true
-}: LoadingSpinnerProps) {
+}: LoadingSpinnerProps) => {
   const _h = "h-" + size
   const _w = "w-" + size
 
@@ -38,3 +38,5 @@ export default function LoadingSpinner({
     </div>
   )
 }
+
+export default LoadingSpinner

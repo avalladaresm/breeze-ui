@@ -14,7 +14,7 @@ interface ButtonProps {
   className?: string
 }
 
-export default function Button({
+const Button = ({
   label,
   icon,
   iconOnly = false,
@@ -25,7 +25,7 @@ export default function Button({
   onClick = undefined,
   innerRef = undefined,
   className = ""
-}: ButtonProps) {
+}: ButtonProps) => {
   return (
     <button
       type={type}
@@ -59,3 +59,5 @@ export default function Button({
     </button>
   )
 }
+
+export default Button
