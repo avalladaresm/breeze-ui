@@ -2,30 +2,16 @@ name: Jest Testing/Coverage
 
 on:
   push:
-    branches: 
+    branches:
       - main
-      - develop
   pull_request:
-    branches: 
+    branches:
       - main
 
   workflow_dispatch:
 
 jobs:
-  testdevelop:
-    name: Run tests in develop branch
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@develop
-
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Run tests
-        run: yarn test -- --coverage --watchAll=false
-
-  testmain:
+  test:
     name: Run tests in main branch
     runs-on: ubuntu-latest
 
