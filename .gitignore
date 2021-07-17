@@ -112,3 +112,5 @@ dist
 
 lib
 build
+bui.code-workspace
+playground
