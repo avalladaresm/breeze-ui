@@ -37,7 +37,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - name: Install dependencies
         run: yarn install
-      - name: Buildind project
+      - name: Building project
         run: yarn build
       - name: Publish
         env:
