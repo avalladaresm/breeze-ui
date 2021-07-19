@@ -1,17 +1,17 @@
-import LoadingSpinner from "../LoadingSpinner"
-import { MutableRefObject } from "react"
+import LoadingSpinner from "../LoadingSpinner";
+import { MutableRefObject } from "react";
 
 interface ButtonProps {
-  label?: string
-  icon?: JSX.Element
-  iconOnly?: boolean
-  type: "button" | "submit" | "reset"
-  disabled?: boolean
-  priority?: "primary" | "secondary" | "ghost" | "icononly"
-  isLoading?: boolean
-  onClick?: () => void
-  innerRef?: MutableRefObject<null>
-  className?: string
+  label?: string;
+  icon?: JSX.Element;
+  iconOnly?: boolean;
+  type: "button" | "submit" | "reset";
+  disabled?: boolean;
+  priority?: "primary" | "secondary" | "ghost" | "icononly";
+  isLoading?: boolean;
+  onClick?: () => void;
+  innerRef?: MutableRefObject<null>;
+  className?: string;
 }
 
 const Button = ({
@@ -44,20 +44,24 @@ const Button = ({
           : priority
       } ${iconOnly && ""}`}
     >
-      {isLoading && (
-        <LoadingSpinner
-          size={3}
-          color={`${
-            priority === "secondary" || priority === "ghost"
-              ? "text-blue-500"
-              : "text-white"
-          }`}
-        />
-      )}
-      {label}
+      <div className="flex flex-row space-x-2 items-center">
+        <div>
+          {isLoading && (
+            <LoadingSpinner
+              size="sm"
+              color={`${
+                priority === "secondary" || priority === "ghost"
+                  ? "text-blue-500"
+                  : "text-white"
+              }`}
+            />
+          )}
+        </div>
+        <div>{label}</div>
+      </div>
       {icon}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

@@ -1,24 +1,19 @@
-interface LoadingSpinnerProps {
-  size?: number
-  color?: string
-  addMargin?: boolean
-}
+import colors from "../../utils/colors";
+import { BreezeSpacing, ConditionalProps } from "../types";
 
 const LoadingSpinner = ({
-  size = 10,
-  color = "text-blue-500",
-  addMargin = true
+  size = "sm",
+  color = colors.blue.base,
+  twSpacing = undefined
 }: LoadingSpinnerProps) => {
-  const _h = "h-" + size
-  const _w = "w-" + size
+  const h = "h-" + size;
 
   return (
     <div className="flex justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`${
-          addMargin ? "mr-2" : "mr-0"
-        } animate-spin ${color} ${_h} ${_w}`}
+        className={`animate-spin ${color} ${size === "tw" ? twSpacing : h}`}
+        style={{ color: color }}
         fill="none"
         viewBox="0 0 24 24"
       >
@@ -36,7 +31,26 @@ const LoadingSpinner = ({
         ></path>
       </svg>
     </div>
-  )
-}
+  );
+};
 
-export default LoadingSpinner
+export default LoadingSpinner;
+
+/**
+ * @property {string} [color] - custom colors accessed when importing the `colors` utility
+ * @property {BreezeSpacing} [size] - custom Breeze-UI spacing convention
+ * @property {twSpacing} - Tailwind CSS spacing (width or height) class only when `size` property is set to `tw`
+ */
+declare type LoadingSpinnerProps = ConditionalProps<
+  {
+    color?: string;
+    size?: BreezeSpacing | "tw";
+    twSpacing?: string | undefined;
+  },
+  "size",
+  {
+    color?: string;
+    size: "tw";
+    twSpacing: string;
+  }
+>;
