@@ -1,9 +1,21 @@
 module.exports = {
   mode: "jit",
-  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  purge: [
+    "./index.html",
+    "./src/**/*.{tsx,js,ts,jsx}",
+    "./components/**/*.{tsx,js,ts,jsx}"
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {
+      spacing: {
+        xs: "0.5rem",
+        sm: "1rem",
+        md: "2rem",
+        lg: "3rem",
+        xl: "4rem"
+      }
+    }
   },
   variants: {
     extend: {
@@ -18,4 +30,4 @@ module.exports = {
       borderWidth: ["disabled"]
     }
   }
-}
+};
