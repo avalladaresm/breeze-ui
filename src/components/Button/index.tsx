@@ -45,8 +45,8 @@ const Button = ({
       } ${iconOnly && ""}`}
     >
       <div className="flex flex-row space-x-2 items-center">
-        <div>
-          {isLoading && (
+        {isLoading && (
+          <div>
             <LoadingSpinner
               size="sm"
               color={`${
@@ -55,8 +55,8 @@ const Button = ({
                   : "text-white"
               }`}
             />
-          )}
-        </div>
+          </div>
+        )}
         <div>{label}</div>
       </div>
       {icon}

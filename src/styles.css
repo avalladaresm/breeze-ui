@@ -12,4 +12,8 @@
   button.ghost {
     @apply inline-flex items-center justify-center px-4 py-2 text-sm leading-tight font-medium rounded-md text-blue-700 active:underline focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:ring-inset disabled:bg-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed disabled:no-underline;
   }
+
+  span.badge {
+    @apply inline-flex items-center px-2.5 py-0.5 text-sm font-medium;
+  }
 }
