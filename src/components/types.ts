@@ -10,6 +10,60 @@
 export type BreezeSpacing = "xs" | "sm" | "md" | "lg" | "xl";
 
 /**
+ * Breeze-UI text skeleton width options
+ * @type xs - 4rem
+ * @type sm - 8rem
+ * @type md - 12rem
+ * @type lg - 16rem
+ * @type xl - 20rem
+ * @type 2xl - 24rem
+ * @type 3xl - 30rem
+ * @type 4xl - 40rem
+ */
+export type BreezeTextSkeletonWidth =
+  | "xs"
+  | "sm"
+  | "md"
+  | "lg"
+  | "xl"
+  | "2xl"
+  | "3xl"
+  | "4xl";
+
+/**
+ * Breeze-UI text skeleton height options
+ * @type 2xs - 0.5rem
+ * @type xs - 0.75rem
+ * @type sm - 0.875rem
+ * @type md - 1rem
+ * @type lg - 1.125rem
+ * @type xl - 1.25rem
+ * @type 2xl - 1.5rem
+ * @type 3xl - 1.875rem
+ * @type 4xl - 2.25rem
+ * @type 5xl - 3rem
+ * @type 6xl - 3.75rem
+ * @type 7xl - 4.5rem
+ * @type 8xl - 6rem
+ * @type 9xl - 8rem
+ */
+export type BreezeTextSkeletonHeight =
+  | "2xs"
+  | "xs"
+  | "sm"
+  | "md"
+  | "lg"
+  | "xl"
+  | "2xl"
+  | "3xl"
+  | "4xl"
+  | "5xl"
+  | "6xl"
+  | "7xl"
+  | "8xl"
+  | "9xl";
+
+/**
  * Breeze-UI shadow options
  * @type none - "none"
  * @type xs - "0 1px 2px 0 rgba(0, 0, 0, 0.05)"
