@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -15,9 +16,42 @@ module.exports = {
         sm: "1rem",
         md: "2rem",
         lg: "3rem",
-        xl: "4rem"
+        xl: "4rem",
+        "skeletonw-xs": "4rem",
+        "skeletonw-sm": "8rem",
+        "skeletonw-md": "12rem",
+        "skeletonw-lg": "16rem",
+        "skeletonw-xl": "20rem",
+        "skeletonw-2xl": "24rem",
+        "skeletonw-3xl": "30rem",
+        "skeletonw-4xl": "40rem",
+        "skeletonh-2xs": "0.5rem",
+        "skeletonh-xs": "0.75rem",
+        "skeletonh-sm": "0.875rem",
+        "skeletonh-md": "1rem",
+        "skeletonh-lg": "1.125rem",
+        "skeletonh-xl": "1.25rem",
+        "skeletonh-2xl": "1.5rem",
+        "skeletonh-3xl": "1.875rem",
+        "skeletonh-4xl": "2.25rem",
+        "skeletonh-5xl": "3rem",
+        "skeletonh-6xl": "3.75rem",
+        "skeletonh-7xl": "4.5rem",
+        "skeletonh-8xl": "6rem",
+        "skeletonh-9xl": "8rem",
+        "avatar-xs": "1rem",
+        "avatar-sm": "1.5rem",
+        "avatar-md": "2rem",
+        "avatar-lg": "2.5rem",
+        "avatar-xl": "3rem",
+        "avatar-2xl": "3.5em",
+        "avatar-3xl": "4rem",
+        "avatar-4xl": "4.5rem",
+        "avatar-5xl": "5rem",
+        "avatar-6xl": "6rem",
+        "avatar-7xl": "7rem"
       },
-      colors: { amber: colors.amber }
+      colors: { amber: colors.amber, blueGray: colors.blueGray }
     },
     boxShadow: {
       none: "none",

@@ -124,6 +124,35 @@ export type BreezeRoundedSides =
   | "topLeft"
   | "bottomLeft";
 
+/**
+ * Breeze-UI text Avatar height/width options
+ * @type xs - 1rem
+ * @type sm - 1.5rem
+ * @type md - 2rem
+ * @type lg - 2.5rem
+ * @type xl - 3rem
+ * @type 2xl - 3.5em
+ * @type 3xl - 4rem
+ * @type 4xl - 4.5rem
+ * @type 5xl - 5rem
+ * @type 6xl - 6rem
+ * @type 7xl - 7rem
+ */
+export type BreezeAvatarSize =
+  | "xs"
+  | "sm"
+  | "md"
+  | "lg"
+  | "xl"
+  | "2xl"
+  | "3xl"
+  | "4xl"
+  | "5xl"
+  | "6xl"
+  | "7xl";
+
+export type ResultTypes = "info" | "success" | "warning" | "danger";
+
 export type BreezeColor = {
   [key in Color]: ColorTone;
 };
