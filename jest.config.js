@@ -2,6 +2,7 @@ module.exports = {
   moduleFileExtensions: ["tsx", "ts", "jsx", "js", "json", "node"],
   snapshotSerializers: ["enzyme-to-json/serializer"],
   setupFilesAfterEnv: ["./src/setupEnzyme.ts"],
+  testEnvironment: "jsdom",
   testRegex: "/*.test.tsx$",
   collectCoverage: true,
   coverageReporters: ["lcov"],
@@ -14,4 +15,4 @@ module.exports = {
       statements: 0
     }
   }
-}
+};
